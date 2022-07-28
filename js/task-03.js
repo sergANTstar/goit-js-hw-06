@@ -18,14 +18,9 @@ const ul = document.querySelector('ul');
 const list = images.map((image)=> `<li class="img"><img src="${image.url}" width="320" alt="${image.alt}"></li>`)
 ul.insertAdjacentHTML('beforeend', list.join(''));
 
-const head = document.querySelector('head');
-const style = `<style type="text/css">
-               .gallery{
-                display: flex;
-                list-style: none;
-                gap: 150px;
-               }
-               </style>`;
+//ul.style.display = "flex";
+//ul.style.listStyle = "none";
+//ul.style.gap = "150px" ;
 
-let html = "<li>My new paragraph.</li>";
-head.insertAdjacentHTML("beforeend", style);
+ul.classList.add("gallery-3")
+
